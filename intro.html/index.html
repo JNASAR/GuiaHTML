@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        table, th, td 
+        {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--crear tabla-->
+    <table style="width: 500px ;">
+        <!--columnas-->
+        <thead>
+            <tr>
+                <!--cabezera-->
+                <th>
+                    Producto
+                </th>
+                <th>
+                    Precio
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!--dato fijado en la columna-->
+                <td>
+                    JNA
+                </td>
+                <td>
+                    JNASAR
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total 1900000</td>
+        </tfoot>
+    </table>
+    <!--Listas-->
+    <!--No ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!--Ordenada-->
+    <ol>
+        <li value="28">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <!--Lista anidada-->
+        <li>
+            <ol>
+                <li>
+                    <!--Estilo de numeracion con la propiedad Stylr="list-style-type: estilo (Control+espaciadora);"-->                    
+                    <li style="list-style-type: lower-alpha;">Elemento 1</li>
+                    <li style="list-style-type: lower-alpha;">Elemento 2</li>
+                    <li style="list-style-type: lower-alpha;">Elemento 3</li>
+                    <li style="list-style-type: lower-alpha;">Elemento 4</li>
+                </li>
+            </ol>
+        </li>
+    </ol>
+
+
+    <!--<form></form> = Formularios-->
+    <!-- get = envia la informacion al URL (250 caraqcteres) 
+    post = envia los datos en las cabezeras-->
+    <form action="/formulario" method="get">
+        <!--propiedad for="Nombre" para darle una identidad al texto mostrado en la 
+        pagina web-->
+        <label for="Nombre">Nombre</label>
+        <!--propiedad type="text" comportamiento para la etiqueta input
+        submit, text, email. password, radio, chekbox, file...-->
+        <!--propiedad id="Nombre" asignamos la identidad del texto al cuadro input
+        dando como resultado que al hacer clik en el texto se seleccione el cuadro input-->
+        <!--propiedad name="nombre" 
+            crea una key para poder usar la informacio, llamandola con la key-->
+        <!--propiedad placeholder="Nombre" 
+            es el texto de color gris claro que se muestra dento del cuadro input-->
+        <input type="text" id="Nombre" name="nombre" placeholder="Nombre"/>
+        <br>
+        <label for="Apellido">Apellido</label>
+        <input type="text" id="Apellido" name="apellido" placeholder="Apellido"/>
+        <br>
+        <label for="Comentario">Comentario</label>
+        <textarea cols="50" rows="10" id="Comentario" placeholder="Comentario" name="comentario"></textarea>
+        <br>
+        <!--la etiquta <button> se deja personalizar mucho mas que un <inout>-->
+        <button type="button">Tipo boton</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+    </form>
+    <!-- desde <h1> hasta <h6> -->
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Mi sexto heading</h6>
+    <p>Chanchito feliz esta muy feliz.</p>
+    <!-- <hr> = linea divisora -->
+    <hr>
+    <p>Chanchito triste esta muy triste.</p>
+    <h2>Chanchito felipe</h2>
+    <!-- Comentarios -->
+    <p>
+        <!-- <span> sirve para poder personalizar o resaltar parte de un texto-->
+        Este texto es <span style="color:blue">mucho mas largo</span> 
+        y es para mostrar <br>
+        la etiquta de span!
+    </p>
+    <!-- etiqueta de hiper binculo <a></a> -->
+    <a href="https://www.google.com">Ir a Google en esta misma pag</a>
+    <a target href="https://www.google.com">Ir a Google enuna pestaña diferente</a>
+    <!-- <img> cargar imagen-->
+    <img src="https://ruta.de.la.pagina.web"/>
+    <img src="ruta de la imagen  en la carpeta"/>
+    <!--propiedades width = ancho /// height= alto-->
+    <img src="img/hck.jpg"width="400"/>
+
+
+    
+    
+</body>
+</html>

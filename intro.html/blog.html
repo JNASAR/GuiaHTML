@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!--no podemos anidar <header>-->
+    <header>
+        <!--IMPORTANTE el atributo "id" solo se debe usar un solo nonmbre en todo el codigo
+        en caso de requrir mas identificaciones usar "class"-->
+        <h1 id="titulo">Blog de JNASAR</h1>
+    </header>
+    <!--<div> tiene un uso muy similar a <section>-->
+    <div>
+        <p>Soy un parrafo dentro de una etiqueta div </p>
+    </div>
+    <!--secciones de nuestro blog-->
+    <section>
+        <!--usado para definir una historia, noticias... descripciones-->
+        <article class="post">
+            <h2>Titulo de mi post</h2>
+            <p>Descricion de mi post</p>
+            <img src="img/hck.jpg" width="400"/>
+            <p>Texto del articulo, de la imagen, texto de prueba</p>
+        </article>
+        <article class="post">
+            <h2>Titulo de mi post 2</h2>
+            <p>Descricion de mi post 2</p>
+            <img src="img/hck2.jpg" width="400"/>
+            <p>Texto del articulo 2, de la imagen 2, texto de prueba</p>
+        </article>
+        <article class="post">
+            <h2>Titulo de mi post 3</h2>
+            <p>Descricion de mi post 3</p>
+            <img src="img/hck3.jpg" width="400"/>
+            <p>Texto del articulo 3, de la imagen, texto de prueba</p>
+        </article>
+    </section>
+    <!--esta es geeralmenteusada para los derechos de autor-->
+    <footer>
+        <a href="#titulo">Ir al comienzo</a>
+        <!--mailto se usa para crear un "hipervinculo" al correo electronico de contacto-->
+        <a href="mailto:jna.stivens.24@gmail.com">contactame aqui</a>
+        <p>Copyrigth 2022</p>
+    </footer>
+</body>
+</html>
